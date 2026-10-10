@@ -1,0 +1,6 @@
+{
+  "name": "ZAKHAR // Offline Survival & Practical Tech System",
+  "description": "Standalone offline-first survival knowledge, practical field engineering tools, technology tree graph, and NeuralCore verification blueprint.",
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

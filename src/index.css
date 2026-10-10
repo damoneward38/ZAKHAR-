@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  code, pre, .font-mono, [data-mono="true"] {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Tactical Color Themes */
+body.theme-standard {
+  background-color: #090a0f;
+  color: #e2e8f0;
+}
+
+body.theme-amber {
+  background-color: #0c0800;
+  color: #fbbf24;
+}
+
+body.theme-amber .border-zinc-800,
+body.theme-amber .border-slate-800 {
+  border-color: rgba(217, 119, 6, 0.3) !important;
+}
+
+body.theme-amber .bg-zinc-900,
+body.theme-amber .bg-slate-900 {
+  background-color: #1a1200 !important;
+}
+
+body.theme-red {
+  background-color: #0d0202;
+  color: #f87171;
+}
+
+body.theme-red .border-zinc-800,
+body.theme-red .border-slate-800 {
+  border-color: rgba(220, 38, 38, 0.3) !important;
+}
+
+body.theme-red .bg-zinc-900,
+body.theme-red .bg-slate-900 {
+  background-color: #1a0505 !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}
